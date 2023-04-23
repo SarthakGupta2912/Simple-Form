@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table, th, td, tr {
+          border: 2px solid black;
+          border-collapse:collapse;
+        }
+        
+        input,select{
+            height: 20px;
+            width: 150px;
+            text-align: center;
+            background-color: peachpuff;
+        }
+    </style>
+<title>My Form</title>
+</head>
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;color: aliceblue; background: linear-gradient(blue,pink,white);height: 100%;background-attachment: fixed;">
+    <center>
+<form action="Form_using_tables.html">
+   <fieldset >
+       <legend><b><marquee scrollamount="4"> REGISTRATION FORM </marquee></b></legend>
+    <table>
+        <tr style="background: rgb(81, 138, 121);">
+            <th>First Name</th>
+            <th>Middle Name</th>
+            <th>Last Name</th>
+        </tr>
+
+        <tr>
+            <td><input type="text" maxlength="30"></td>
+            <td><input type="text" placeholder="Leave blank if not applicable" maxlength="30" style="width: 168px;"></td>
+            <td><input type="text" maxlength="30"></td>
+        </tr>
+
+        <tr style="background: rgb(81, 138, 121);">
+            <th>Aadhar Number</th>
+            <th>Educational Qualification</th>
+            <th>Email</th>
+        </tr>
+
+        <tr>
+            <td><input type="number" min = "111111111111"max="999999999999" placeholder="329356897854"></td>
+            <td>
+                <select>
+                <option value="10th">10th</option>
+                <option value="12th">12th</option>
+                <option value="Diploma">Diploma</option>
+                <option value="Graduate">UnderGraduate</option>
+                <option value="PostGraduateDiploma">PostGraduateDiploma</option>
+                <option value="Graduate">PostGraduate</option>
+                </select>
+            </td>
+            <td><input type="email" maxlength="100"></td>
+        </tr>
+
+        <tr style="background: rgb(81, 138, 121);">
+            <th>Mobile Number</th>
+            <th>Date of birth</th>
+            <th>Address</th>
+        </tr>
+
+        <tr>
+            <td><input type="tel" pattern="[0-9]{10}" placeholder="9023850632"></td>
+            <td><input type="date" maxlength="30" style="width: 168px;"></td>
+            <td><input type="text" maxlength="100"></td>
+        </tr>
+
+    </table></fieldset></center><br>
+    <center><input type="submit" style="height: 40px; width: 80px;background-color:lightskyblue"></center>
+</form>
+</body>
+</html>
